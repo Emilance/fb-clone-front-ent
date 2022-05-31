@@ -1,0 +1,69 @@
+.leftHeader{
+    display:flex;
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.FB_logo{
+     margin:0 0.4rem;
+    color:#4267B2;
+ 
+}
+
+.header_Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #898f9ca8;
+    height:2.4rem;
+    width: 100%;
+     flex: 1;
+    color: #000000;
+    border-radius: 2rem;
+
+}
+
+.header_Search > input{
+      flex:1;
+      font-size: 1rem;
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      outline: none;
+      color: #000000;
+      margin: 0 2rem;
+    
+}
+.header_Search > input::placeholder{
+    color:#000000;
+}
+.searchIcon{
+    margin: 0 0.4rem 0 0.5rem ;
+
+}
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+  
+.header_Search{
+    width:2.4rem;
+    height:2.4rem;
+
+}
+
+.header_Search > input{
+     display:none;
+}
+.leftHeader{
+    margin-right:3rem;
+}
+
+}
+
+

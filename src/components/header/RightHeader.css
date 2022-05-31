@@ -1,0 +1,63 @@
+.rightHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.userProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userProfile > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.widgetIcon {
+    display: flex;
+}
+
+.widgetLogoContainer{
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color:#898f9ca8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:0 0.3rem ;
+}
+
+.widgetLogoContainer:hover{
+      background-color:#898f9cd3 ;
+}
+.plus{
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .userProfile{
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:1000px) {
+
+    .plus{
+        display: flex;
+    }
+    .menugrid{
+        display:none;
+    }
+    
+}

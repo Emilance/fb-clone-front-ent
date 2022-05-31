@@ -1,0 +1,40 @@
+.middleHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+
+
+}
+
+.MenuIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0.2rem;
+   height: 80%;
+   width: clamp(4rem, 40%, 6rem);
+   border-radius: 2px;
+}
+.active{
+    color:#4267B2;
+    border-bottom: 3px solid #4267B2;
+}
+
+.MenuIconContainer:hover{
+    background-color: #898f9ca8;
+}
+
+.circleIcon{
+    border-radius: 50%;
+    border:1px solid black;
+    padding:0.1rem;
+}
+
+
+@media (max-width:600px) {
+    .middleHeader{
+        display: none;
+    }
+     
+}
