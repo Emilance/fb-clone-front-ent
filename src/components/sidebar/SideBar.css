@@ -1,0 +1,17 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    .sideBar{
+        display: none;
+    }
+}

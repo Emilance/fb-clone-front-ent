@@ -1,0 +1,43 @@
+.rightSideBar{
+  margin: 1rem;
+  width:clamp(16rem, 20%, 20rem);
+}
+
+.contactHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color:rgb(102, 87, 87);
+    border-top: 1px solid rgba(102, 87, 87, 0.534);
+    border-bottom: 1px solid rgba(102, 87, 87, 0.534);
+
+}
+
+
+.icon{
+    height: 2rem;
+    width:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+.icon:hover{
+    background-color: #898f9ca8;
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    .rightSideBar{
+        display: none;
+    }
+}

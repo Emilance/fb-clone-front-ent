@@ -5,13 +5,14 @@ import { AiOutlinePlus } from 'react-icons/ai'
 import { FiMenu } from 'react-icons/fi'
 import { MdNotifications, MdArrowDropDown } from 'react-icons/md'
 import './RightHeader.css'
+import Avatar from '../Avatar';
 
 
 const RightHeader = ({ first_name, image}) => {
     return ( 
         <div className="rightHeader">
           <div  className='userProfile'>
-              <img src={image} alt='me'/>
+             <Avatar image={image}/>
               <p>{first_name}...</p>
           </div>
           <div className='widgetIcon'>

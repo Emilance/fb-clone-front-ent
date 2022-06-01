@@ -1,0 +1,28 @@
+.storyReels{
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.storyReelsButton{
+    height:3.4rem;
+    display: flex;
+    border-bottom: 1px solid  #898f9ca8;
+}
+.storyReelsButton >p{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border-radius: 5px;
+}
+
+.storyReelsButton >p:hover{
+    background-color: #898f9ca8 ;
+}
+
+.story{
+    display: flex;
+    justify-content: center;
+}
