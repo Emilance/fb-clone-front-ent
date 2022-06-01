@@ -1,8 +1,13 @@
 .header{
     display: flex;
     height: 4rem;
+    align-items: center;
     justify-content: space-between;
 
+}
+
+.hambugger{
+  width: 2.5rem;
 }
 
 

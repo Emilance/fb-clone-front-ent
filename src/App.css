@@ -7,8 +7,9 @@
   display: flex;
   justify-content: space-between;
   background-color: #898f9c79;
-  ;
+  overflow-x: hidden;
 }
+
 
 
 @media (max-width:1200px) {

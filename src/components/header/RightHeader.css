@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.userProfile> p{
+    margin-left: 0.3rem;
+}
+
 .userProfile > img {
     height: 40px;
     width: 40px;
@@ -23,7 +27,7 @@
 .widgetLogoContainer{
     height: 2.4rem;
     width: 2.4rem;
-    background-color:#898f9ca8 ;
+    background-color:#898f9c79 ;
     display: flex;
     justify-content: center;
     align-items: center;

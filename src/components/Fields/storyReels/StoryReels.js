@@ -21,9 +21,9 @@ const StoryReels = () => {
           </div>
           <div className='story'>
 
-          {Images.map((img)=>{
+          {Images.map((img, index)=>{
               return(
-                <Stories  image={img.src}
+                <Stories key={index} image={img.src}
                 ProfileName={img.name}
               />
               )

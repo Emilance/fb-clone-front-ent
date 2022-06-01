@@ -1,9 +1,9 @@
 import React from 'react';
 import { BsFacebook } from 'react-icons/bs'
 import { BiSearch } from 'react-icons/bi'
-import { FiMenu } from 'react-icons/fi'
 
 import './LeftHeader.css'
+import HamBugger from './HamBugger';
 
 
 const LeftHeader = () => {
@@ -14,6 +14,7 @@ const LeftHeader = () => {
                 <BiSearch className='searchIcon' size='20'/>
                 <input type='text' placeholder='search facebook'/>
             </div>
+            <HamBugger/>
 
         </div>
      );

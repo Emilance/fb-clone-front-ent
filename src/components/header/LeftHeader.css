@@ -3,7 +3,7 @@
     margin:1rem;
     justify-content: center;
     align-items: center;
- 
+    width:20rem;
 }
 .FB_logo{
      margin:0 0.4rem;
@@ -15,9 +15,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #898f9ca8;
+    background-color: #898f9c79;
     height:2.4rem;
-    width: 100%;
+    max-width: 15rem;
      flex: 1;
     color: #000000;
     border-radius: 2rem;
@@ -32,7 +32,7 @@
       width: 100%;
       outline: none;
       color: #000000;
-      margin: 0 2rem;
+      margin: 0 1rem 0 0;
     
 }
 .header_Search > input::placeholder{

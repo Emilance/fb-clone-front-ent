@@ -1,0 +1,30 @@
+.upperCommentAndLikes{
+    height: 2rem;
+}
+
+
+.lowerCommentAndLikes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #898f9c79;
+}
+
+.commentAndLikesLogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.commentAndLikesLogo:hover{
+     background-color:#898f9c79 ;
+}
+
+.commentAndLikesLogo>p{
+    margin-left: 0.3rem;
+}

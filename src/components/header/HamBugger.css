@@ -1,0 +1,22 @@
+.hamBugger{
+    width: 2.5rem;
+    margin: 0 0.7rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.hamBugger:hover{
+    background-color: #898f9ca8;
+}
+
+
+@media (min-width: 1200px) {
+    .hamBugger{
+        display: none;
+    }
+}
