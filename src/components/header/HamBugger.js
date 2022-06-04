@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { FiMenu } from 'react-icons/fi'
 import { ImCross }  from 'react-icons/im'
 import './HamBugger.css'
-import { UserContext, StateContext } from '../../App'
+import { UserContext, StateContext } from '../../Home'
 
 
 

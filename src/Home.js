@@ -15,13 +15,13 @@ export const OpenPostContext= React.createContext();
 
 function Home() {
  
-    const [open, setOpen]  = useState(true)
-    const [openPost, setOpenPost] =useState(false)
+    const [open, setOpen]  = useState(true);
+    const [openPost, setOpenPost] =useState(false);
 
+    
   return (
     <div className="App">
-     
-      {/* <UserContext.Provider  value={setOpen}>
+    <UserContext.Provider  value={setOpen}>
       <StateContext.Provider value={open}>
 
        <Header/>
@@ -46,12 +46,15 @@ function Home() {
       
         {openPost?
         <div className='postPopUP'>
-      <PopUp/>
+            <OpenPostContext.Provider value={setOpenPost}>
+          <PostContext.Provider value={openPost}>
+             <PopUp/>
+           </PostContext.Provider>
+        </OpenPostContext.Provider>
         </div> 
         :
         null
-        } */}
-        <LoginPage/>
+        } 
     </div>
   );
 }

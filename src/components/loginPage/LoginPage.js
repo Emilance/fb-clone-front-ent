@@ -4,6 +4,7 @@ import './LoginPage.css'
 const LoginPage = () => {
     return ( 
         <div className='loginPage'>
+            <p className='trash'>No backend yet!!<a href="/home">  click Here to skip</a></p>
             <div className='titleCon'>
             <div className='pageTitle'>
                 <h1>facebook</h1>

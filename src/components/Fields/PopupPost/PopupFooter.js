@@ -4,7 +4,7 @@ import { FaPhotoVideo }  from 'react-icons/fa'
 import { BsEmojiLaughing } from 'react-icons/bs'
 import {  BiDotsHorizontalRounded } from 'react-icons/bi'
 import './PopUpFooter.css'
-import { PostContext, OpenPostContext } from '../../../App';
+import { PostContext, OpenPostContext } from '../../../Home';
 
 
 
@@ -25,7 +25,7 @@ const PopUpFooter = () => {
                 <MdVideoCameraFront color='rgb(231, 73, 73)' size='30'/>
                    </div>
                 <div   className='optionIcon'>       
-                <FaPhotoVideo color='rgba(8, 150, 8, 0.884)' size='25'/>
+                <FaPhotoVideo  color='rgba(8, 150, 8, 0.884)' size='25'/>
                    </div>
                 <div className='optionIcon'>
                 <BsEmojiLaughing color='rgb(175, 241, 21)'  size='22'/>

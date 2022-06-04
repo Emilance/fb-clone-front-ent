@@ -50,22 +50,26 @@
     align-items: center;
     flex-direction: column;
     max-width:25rem ;
+
     background-color: white;
     width: 100%;
     padding: 0.7rem 0;
     border-radius: 10px;
+    box-shadow: 2px 2px 15px #898f9ca8 ;
 
 }
 
 .formContainer > form >input {
     height: 3rem;
     width: 80%;
-    margin:.3rem 0;
+    margin:.4rem 0;
     border-radius: 0.5rem;
     border: 1px solid #898f9ca8;
     outline: none;
     padding: 0 1rem;
+    font-size: 1.1rem;
 }
+
 
 .formContainer > form >input:focus{
     border: 2px solid #4267B2 ;
@@ -79,7 +83,9 @@
     font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.formContainer > form > .loginSubmit:hover{
+    background-color: #355ba5 ;
+}
 .formContainer > form >  .createAccountSubmit{
     width: 50%;
     cursor: pointer;
@@ -89,9 +95,21 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .forgetpassword {
-    margin : 2rem 0;
+    padding : 1rem 0;
+    margin: 1rem 0;
     text-decoration: none;
     color:#4267B2 ;
+    border-bottom: 1px solid #898f9c6c;
+    width: 90%;
+    text-align: center;
+}
+
+.trash {
+    position: absolute;
+    top: 2px;
+    color:red;
+   
+
 }
 
 @media (max-width:1000px) {
@@ -101,9 +119,24 @@
 
     .pageTitle > h1 , .pageTitle > p {
         text-align: center;
+     
     }
     .titleCon{
         flex-direction: column;
         flex:1;
+    }
+    .pageTitle {
+        max-width: 23rem;
+        margin-bottom: 1rem;
+    }
+    .formContainer{
+        align-items: flex-start;
+    } 
+    .formContainer > form {
+        max-width: 23rem;
+
+    }
+    .formContainer > form >  .createAccountSubmit{
+        font-size: 1rem;
     }
 }
