@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Avatar from '../../Avatar';
 import { MdVideoCameraFront } from 'react-icons/md'
 import { FaPhotoVideo }  from 'react-icons/fa'
 import { BsEmojiLaughing } from 'react-icons/bs'
 import image from '../../images/demo.png'
 import './PostField.css'
+import { PostContext, OpenPostContext } from '../../../App';
 
 
 const PostField = () => {
+const createPost = useContext(PostContext)
+const openCreatePost =useContext(OpenPostContext)
+
+  const OpenCreatePost = ()=> {
+       openCreatePost(!createPost);
+  }
+
+
     return ( 
         <div className='postField'>
               <div className='upperPostField'>
                       <div className='avatarContainer'>
                         <Avatar size='30' image={image}  />
                       </div>
-                     <input type='text' placeholder='Whats on your mind' />
+                     <input onClick={OpenCreatePost} type='text' placeholder='Whats on your mind' />
               </div>
               <div className='lowerPostField'>
                   <div className='insertField'>

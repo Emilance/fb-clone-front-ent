@@ -1,14 +1,22 @@
-import React from 'react';
-import { MdVideoCameraFront } from 'react-icons/md'
+import React, { useContext } from 'react';
+import { MdVideoCameraFront,MdArrowBack } from 'react-icons/md'
 import { FaPhotoVideo }  from 'react-icons/fa'
 import { BsEmojiLaughing } from 'react-icons/bs'
 import {  BiDotsHorizontalRounded } from 'react-icons/bi'
 import './PopUpFooter.css'
+import { PostContext, OpenPostContext } from '../../../App';
+
 
 
 
 
 const PopUpFooter = () => {
+  const createPost = useContext(PostContext)
+  const openCreatePost = useContext(OpenPostContext)
+
+  const OpenCreatePost = ()=> {
+       openCreatePost(!createPost);
+  }
     return ( 
         <div className='popUpFooter'>
             <div className='postIconContainer'>
@@ -16,7 +24,7 @@ const PopUpFooter = () => {
                 <div className='optionIcon'>
                 <MdVideoCameraFront color='rgb(231, 73, 73)' size='30'/>
                    </div>
-                <div className='optionIcon'>       
+                <div   className='optionIcon'>       
                 <FaPhotoVideo color='rgba(8, 150, 8, 0.884)' size='25'/>
                    </div>
                 <div className='optionIcon'>
@@ -25,9 +33,12 @@ const PopUpFooter = () => {
                 <div className='optionIcon'>
                 <BiDotsHorizontalRounded   size='20'/>
                    </div>
+                   <div   onClick={OpenCreatePost}  className='optionIcon absolute'>
+                <MdArrowBack   size='20'/>
+                   </div>
 
             </div>
-            <button  className='postSubmit'>Post</button>
+            <button onClick={OpenCreatePost} className='postSubmit'>Post</button>
         </div>
      );
 }

@@ -1,19 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FiMenu } from 'react-icons/fi'
+import { ImCross }  from 'react-icons/im'
 import './HamBugger.css'
+import { UserContext, StateContext } from '../../App'
+
 
 
 const HamBugger = () => {
-    const {open, setOpen}  = useState(false)
-
+    const [crossIcon, setCrossIcon] = useState(false)
+    const user = useContext(UserContext)
+    const open = useContext(StateContext)
      const toggleMenu = () =>{
+         user(!open)
+         setCrossIcon(!crossIcon)
         
-        setOpen(true)
      }
 
     return ( 
         <div  onClick={toggleMenu}  className='hamBugger'>
-            <FiMenu  size='27'/>
+        {!crossIcon ?
+           <FiMenu  size='27'/>
+           :
+           <ImCross size='25'/>
+        }   
+         
+        
              
         </div>
      );

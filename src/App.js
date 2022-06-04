@@ -1,26 +1,18 @@
-
+import React, {useState} from 'react';
 import './App.css';
-import Fields from './components/Fields/Fields';
-import PopUp from './components/Fields/PopupPost/Popup';
-import Header from './components/header/Header';
-import RightSideBar from './components/sidebar/RightSideBar';
-import SideBar from './components/sidebar/SideBar';
+import Home from './Home';
+
 
 function App() {
+ 
+    
   return (
     <div className="App">
-       <Header/>
-       <div className='fields'>
-
-       <SideBar/>
-       <Fields/>
-       <RightSideBar/>
-       </div>
-        {/* <div className='postPopUP'>
-
-      <PopUp/>
-        </div> */}
+      <Home/>
     </div>
+    
+      
+      
   );
 }
 

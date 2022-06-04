@@ -28,4 +28,7 @@
   .fields{
     justify-content: space-around;
   }
+  .menu {
+    display: none;
+  }
 }
