@@ -1,0 +1,12 @@
+
+.popUpHeader> h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid  #898f9ca8;
+}
+
+.userDetails{
+    display: flex;
+    padding: 0.7rem  0.7rem  0.7rem 0;
+}

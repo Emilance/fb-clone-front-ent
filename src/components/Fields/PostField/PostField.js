@@ -18,11 +18,11 @@ const PostField = () => {
               </div>
               <div className='lowerPostField'>
                   <div className='insertField'>
-                       <MdVideoCameraFront color='rgb(231, 73, 73)' size='30'/>
+                       <MdVideoCameraFront color='rgb(231, 73, 73)' size='27'/>
                        <p>Live video</p>
                   </div>
                   <div className='insertField'>
-                       <FaPhotoVideo color='rgba(8, 150, 8, 0.884)' size='25'/>
+                       <FaPhotoVideo color='rgba(8, 150, 8, 0.884)' size='23'/>
                        <p>Photo/video</p>
                   </div>
                   <div className='insertField'>

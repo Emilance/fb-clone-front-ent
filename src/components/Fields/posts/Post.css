@@ -1,8 +1,15 @@
 .post{
-
-    width:33rem;
+   width:clamp(25rem, 95%, 32rem); 
     background-color: white;
-    margin: 1rem 0;
+    margin: 1rem 0  2rem 0;
     border-radius: 10px;
     
 }
+
+@media (max-width:600px) {
+    .post{
+        /* width: 24rem; */
+        width: 100%;
+    }
+}
+

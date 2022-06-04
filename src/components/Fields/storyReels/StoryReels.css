@@ -2,6 +2,7 @@
     background-color: white;
     margin-top: 1rem;
     border-radius: 10px;
+    width:fit-content;
 }
 
 .storyReelsButton{
@@ -25,4 +26,12 @@
 .story{
     display: flex;
     justify-content: center;
+    margin: 0 0.2rem;
+    
+}
+
+@media (max-width:600px) {
+    .storyReels{
+        width: 100%;
+    }
 }

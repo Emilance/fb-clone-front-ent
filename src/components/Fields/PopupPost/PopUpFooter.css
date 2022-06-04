@@ -1,0 +1,30 @@
+.postIconContainer{
+    border: 1px solid #898f9ca8;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius:0.7rem 1rem;
+    align-items: center;
+}
+
+.optionIcon{
+    width:2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.postSubmit{
+    width: 100%;
+    padding: 0.6rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: #4267B2;
+}
+
+.postSubmit:hover{
+    background-color:#4267B2 ;
+    color:white;
+}

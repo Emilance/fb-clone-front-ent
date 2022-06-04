@@ -31,7 +31,7 @@ const RightHeader = ({ first_name, image}) => {
                   
               <MdNotifications  size='18'/>
                   </div>
-              <div className='widgetLogoContainer'>
+              <div className='widgetLogoContainer  userProfile'>
                   
               <MdArrowDropDown  size='18'/>
                   </div>

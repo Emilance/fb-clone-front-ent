@@ -1,0 +1,20 @@
+.popUp{  
+    box-shadow: 1px 2px 10px #898f9ca8;
+    width:clamp(23rem, 70%, 30rem);
+    padding:1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+
+.textArea{
+    width: 20rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    border:none;
+    outline: none;
+    overflow-y: hidden;
+   
+
+}
+

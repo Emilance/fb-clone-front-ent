@@ -3,7 +3,7 @@
     margin:1rem;
     justify-content: center;
     align-items: center;
-    width:20rem;
+    
 }
 .FB_logo{
      margin:0 0.4rem;
@@ -18,7 +18,7 @@
     background-color: #898f9c79;
     height:2.4rem;
     max-width: 15rem;
-     flex: 1;
+ 
     color: #000000;
     border-radius: 2rem;
 
@@ -63,6 +63,10 @@
 .leftHeader{
     margin-right:3rem;
 }
+
+}
+
+@media (max-width:600px) {
 
 }
 

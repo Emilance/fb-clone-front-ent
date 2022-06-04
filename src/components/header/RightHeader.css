@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   
 }
 .userProfile{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .userProfile> p{
@@ -22,6 +24,7 @@
 
 .widgetIcon {
     display: flex;
+    margin-right: 2rem;
 }
 
 .widgetLogoContainer{
@@ -64,4 +67,9 @@
         display:none;
     }
     
+}
+@media (max-width:600px) {
+    .widgetIcon{
+        margin:0;
+    }
 }

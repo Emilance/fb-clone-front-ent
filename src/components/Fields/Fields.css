@@ -1,18 +1,7 @@
-.postBody {
-      
+.middleField{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.postBody> img {
-    height:auto;
     width:100%;
-    border-radius: 0;
-}
-
-.postBody> p{
-    margin:1rem;
-    
 }

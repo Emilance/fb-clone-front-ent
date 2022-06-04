@@ -4,6 +4,7 @@
    border-radius: 10px;
    margin-bottom: 1rem;
    padding:0 1rem;
+   width:clamp(25rem, 95%, 30rem);
 
 }
 
@@ -13,7 +14,6 @@
     justify-content: center;
     align-items: center;
     
-
 }
 
 .upperPostField> input{
@@ -53,8 +53,25 @@
 
 .insertField> p{
     margin-left:0.2rem;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .insertField:hover{
     background-color:   #898f9ca8;
+}
+
+
+@media (max-width:600px) {
+    .postField{
+           width: 98%;
+    }   
+    .insertField> p{
+        font-size: small;
+        margin-left: 0;
+    }
+    .insertField{
+        padding: 0.5rem;
+        margin: 0.3rem  0;
+    }
 }

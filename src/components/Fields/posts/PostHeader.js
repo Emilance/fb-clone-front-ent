@@ -4,7 +4,8 @@ import {  BiDotsHorizontalRounded } from 'react-icons/bi'
 import './PostHeader.css'
 
 
-const PostHeader = ({image, time, username}) => {
+const PostHeader = ({image, timeStamp, username}) => {
+  
     return ( 
         <div className='postHeader'>
            <div className='user'>
@@ -12,7 +13,7 @@ const PostHeader = ({image, time, username}) => {
                <div className='postDetails'>
 
                <p className='username'>{username}</p>
-               <p> {time}</p>
+               <p> {new Date(parseInt(timeStamp)).toUTCString()}</p>
                </div>
            </div>
            <div className='optionIcon'>

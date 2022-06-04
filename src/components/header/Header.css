@@ -3,12 +3,11 @@
     height: 4rem;
     align-items: center;
     justify-content: space-between;
+    width:100%;
 
 }
 
-.hambugger{
-  width: 2.5rem;
-}
+
 
 
 
@@ -16,6 +15,7 @@
 @media (max-width:600px) {
   .header{
       justify-content: space-between;
+      
   }
 
 
