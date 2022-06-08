@@ -1,0 +1,155 @@
+.SignUpForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size:0.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #393d44;
+    margin-bottom: 0.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+
+}
+
+.inputContainer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.checkboxContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 0;
+}
+  
+form> input  , .inputContainer > input {
+    height: 2rem;
+    padding: 0.3rem 0.4rem;
+    margin:0.3rem 0;
+    outline: none;
+    
+}
+
+.inputContainer > input {
+    width:45%;
+}
+
+.inputContainer > select{
+    height: 2rem;
+    padding: 0.3rem 0.4rem;
+    margin:0.3rem 0;
+    width:32%;
+}
+
+
+.checkboxContainer{
+ 
+    
+}
+
+.checkboxContainer > input[type="radio"]{
+          display: none;
+}
+
+
+.checkboxContainer > label{
+    border: 1px solid #898f9c6c;
+    width:28% ;
+    height: 1.5rem;
+    padding: 0.3rem ;
+    margin:0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkboxContainer > label:after{
+    content: '';
+    width:0.7rem;
+    height:0.7rem;
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+.checkboxContainer > input[type="radio"]:checked + label{
+    background-color:white;
+  
+}
+
+.checkboxContainer > input[type="radio"]:checked + label:after{
+    width:0.7rem;
+    height:0.7rem;
+    border: 1px solid white ;
+    background-color:#355ba5 ;
+}
+
+input[type="submit"]{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    height: 2.3rem;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(3, 194, 3);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.inputContainer>input[type="radio"]{
+    display: none;
+}
+
+.inputContainer> label{
+
+    color:black;
+    padding: 10px 50px;
+    border: 2px solid black;
+
+    align-items: center;
+
+}
+
+.inputContainer> label:after{
+ 
+    content:'';
+    height:30px;
+    width:30px;
+    border: 3px solid black;
+    border-radius: 50%;
+
+}
+
+.inputContainer>input[type="radio"]:checked + label{
+    background-color: aqua;
+     color: white;
+}
+
+.inputContainer>input[type="radio"]:checked + label:after{
+  height: 16px;
+  width:16px;
+   border: 10px solid white;
+   background-color: green;
+} */

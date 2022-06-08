@@ -10,13 +10,14 @@ import { PostContext, OpenPostContext } from '../../../Home';
 
 
 
-const PopUpFooter = () => {
-  const createPost = useContext(PostContext)
+const PopUpFooter = ({createPost}) => {
+  const createPostpop = useContext(PostContext)
   const openCreatePost = useContext(OpenPostContext)
 
   const OpenCreatePost = ()=> {
-       openCreatePost(!createPost);
+       openCreatePost(!createPostpop);
   }
+
     return ( 
         <div className='popUpFooter'>
             <div className='postIconContainer'>
@@ -38,7 +39,7 @@ const PopUpFooter = () => {
                    </div>
 
             </div>
-            <button onClick={OpenCreatePost} className='postSubmit'>Post</button>
+            <button onClick={createPost} className='postSubmit'>Post</button>
         </div>
      );
 }

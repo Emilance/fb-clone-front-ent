@@ -1,0 +1,15 @@
+.signUp{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(243, 245, 247, 0.589);
+}
+.createAccount{
+   background-color: white;
+   height: auto;
+   width: 28rem;
+
+}
