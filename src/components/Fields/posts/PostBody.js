@@ -6,7 +6,7 @@ const PostBody = ({PostText, PostPicture}) => {
     return ( 
         <div className='postBody'>
             <p>{PostText}</p>
-            <img src={PostPicture}/>
+            <img src={`/uploads/${PostPicture}`}/>
         </div>
      );
 }

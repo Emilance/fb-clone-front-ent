@@ -18,7 +18,7 @@ const Post = () => {
         setAllPost(allPosts.data)
         }).catch(err => console.log(err))
     }, [])
-    console.log(allPost.postText);
+    
     return ( 
         <>
         
@@ -35,7 +35,7 @@ const Post = () => {
                     
                     <PostBody
                         PostText={post.postText}
-                         PostPicture={image2} 
+                         PostPicture={post.postImage} 
                      />
                      <CommentAndLikes/>
                      </div>

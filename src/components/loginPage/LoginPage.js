@@ -1,17 +1,31 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SignUp from '../signUpPage/SignUp';
 import './LoginPage.css'
 
+export const signUpContext =React.createContext();
 
- export const signUpContext =React.createContext();
 
 const LoginPage = () => {
+    const navigate = useNavigate()
     const [ displaySignUp, setDisplaySignUp] = useState(false);
     const [user, setUser]  = useState({email: '',  password: ''})
+    const [error, setError] = useState("")
 
  const openSignUp = (e)=> {
      e.preventDefault();
        setDisplaySignUp(!displaySignUp)
+ }
+ const logIn = (e) => {
+    e.preventDefault()
+    axios.post("http://localhost:4000/api/auth", user).then(()=>{
+        navigate("./home");
+        console.log("logIn succcessfully")
+
+    }).catch((err)=> {
+       setError(err.response.data)
+    })
  }
     return ( 
         <div className='loginPage'>
@@ -41,11 +55,10 @@ const LoginPage = () => {
                  placeholder="Password" 
                  value={user.password}
                  onChange={e => setUser({...user, password : e.target.value})}
-
                  />
-                <input type='submit' className='loginSubmit' value="Log In"/>
+                <h5>{error.message}</h5>
+                <input onClick={logIn} type='submit' className='loginSubmit' value="Log In"/>
                 <a href='#' className='forgetpassword'>Forgotten Password?</a>
-
                 <input  onClick={openSignUp} type='submit' className='createAccountSubmit' value='Create New Account'/>
             </form>
             </div>

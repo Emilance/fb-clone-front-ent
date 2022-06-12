@@ -33,3 +33,7 @@
     top:20px;
     left:10px;
 }
+
+.photoUpload{
+    display: none;
+}

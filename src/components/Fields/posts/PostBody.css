@@ -8,6 +8,7 @@
 
 .postBody> img {
     height:auto;
+    max-height: 24rem;
     width:100%;
     border-radius: 0;
 }
