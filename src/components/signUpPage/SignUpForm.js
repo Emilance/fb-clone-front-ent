@@ -1,8 +1,10 @@
 import axios from 'axios';
-import React, { useState } from 'react';
-import {Link, useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MonthsOfTheYear, year } from './DateOfBirthFields';
 import './SignUpForm.css'
+import   { idContext }   from  "../../AuthContext"
+
 
 const DaysInAMonth = []
 for(let x=1 ; x<= 31 ; x++){
@@ -11,15 +13,21 @@ for(let x=1 ; x<= 31 ; x++){
 }
 const initialUser = {firstName: '', surName: '', email: '', password: '',dayOfBirth: "", monthOfBirth:'', yearOfBirth: '', gender:"" }
 const SignUpForm = () => {
+ const setId = useContext(idContext)
+
+
     const navigate = useNavigate()
     const [error, setError] = useState("")
     const [user, setUser] = useState(initialUser)
 
     const submitSignUpForm = (e)=>{
         e.preventDefault()
-        axios.post("http://localhost:4000/api/user", user).then(()=>{
-            navigate("./home");
-            console.log("post succcessfully")
+        axios.post("http://localhost:4000/api/user", user).then((userId)=>{
+            if(userId){
+                setId(userId.data)
+                navigate("./home");
+                console.log("signUp  successfully")
+            }
         }).catch(err => {
             console.log(err.response.data)
             setError(err.response.data)
